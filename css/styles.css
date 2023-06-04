@@ -28,15 +28,22 @@ img {
     margin: 0;
 }
 
-a {
+.link {
     text-decoration: none;
+}
+
+.hero-btn {
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Montserrat, sans-serif;
 }
 
-/* =========HEADER=========== */
+
+
+/* !!!!!!!!!!===HEADER===!!!!!!!!! */
 
 .container {
     min-width: 320px;
@@ -44,12 +51,12 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 
-    outline: 1px solid red;
+
 }
 
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 704;
+        max-width: 768px;
         padding: 0 32px;
     }
 }
@@ -140,7 +147,7 @@ body {
     stroke: var(--orange-color);
 }
 
-/*  ==========BURGER-MENU============  */
+/*  !!!!!!!!===BURGER-MENU===!!!!!!!!!!  */
 
 .menu-toggle {
     margin-left: auto;
@@ -159,7 +166,7 @@ body {
 .menu-toggle:hover,
 .menu-toggle:focus {
     width: 40px;
-    height: 40px;  
+    height: 40px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -184,6 +191,8 @@ body {
     flex-direction: column;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
     background: var(--burger-color);
     z-index: 999;
     transform: translateX(100%);
@@ -213,4 +222,55 @@ body {
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
     color: var(--orange-color);
+}
+
+/* !!!!!!!!!!===HERO==!!!!!!!!!!!!!!!BDWukguyYXKG*/
+
+.hero-container {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+}
+
+.hero-title {
+    display: flex;
+    margin-bottom: 44px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    /* color: var(--white-color); */
+}
+
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-btn.buy-now {
+    background: var(--orange-color);
+}
+
+.hero-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 28px;
+    gap: 14px;
+    border-radius: 100px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-color);
+}
+
+.hero-btn.scroll {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
+}
+
+.hero-icon {
+    background: var(--white-color);
 }
